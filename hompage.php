@@ -25,7 +25,7 @@ if (!isset($_SESSION['user'])) {
 <body class="flex justify-center items-center h-screen bg-gray-100">
     <div class="card w-96 bg-white shadow-xl p-6">
         <h2 class="text-2xl font-bold text-center">Bienvenue, <?= htmlspecialchars($_SESSION['user']); ?> !</h2>
-        <p class="text">Vos informations sont les suivants</p>
+        <p class="text-center">Vos informations sont les suivants</p>
         <?= $message ?>
         <a href="logout.php" class="btn btn-secondary w-full mt-4">Se déconnecter</a>
     </div>
